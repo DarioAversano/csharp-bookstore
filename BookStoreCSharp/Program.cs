@@ -30,13 +30,13 @@ Console.Write("Inserisci profondita del libro: ");
 string DepthBookString = Console.ReadLine();
 float DepthBook = float.Parse(DepthBookString);
 
-Console.Write("Inserisci la valutazione media degli utenti: ");
-string RatingUserString = Console.ReadLine();
-float RatingUser = float.Parse(RatingUserString);
-
 Console.Write("Inserisci il numero di recensioni: ");
 string ReviewsString = Console.ReadLine();
 int Reviews = int.Parse(ReviewsString);
+
+Console.Write("Inserisci la valutazione media degli utenti: ");
+string RatingUserString = Console.ReadLine();
+float RatingUser = float.Parse(RatingUserString);
 
 Console.Write("E disponibile la versione Kindle?");
 string KindleString = Console.ReadLine();
@@ -56,8 +56,8 @@ Console.WriteLine($"Numero delle pagine: {NumberPage} pagine");
 Console.WriteLine($"Peso del libro: {WeightBook} kg");
 Console.WriteLine($"Dimensioni del libro: {HeightBook} cm x {WidthBook} cm x {DepthBook} cm");
 Console.WriteLine("Informazioni Amazon:");
-Console.WriteLine($"Numero di recensioni: {RatingUser} recensioni");
-Console.WriteLine($"Valutazione media: {Reviews} stelline");
+Console.WriteLine($"Numero di recensioni: {Reviews} recensioni");
+Console.WriteLine($"Valutazione media: {RatingUser} stelline");
 Console.WriteLine($"Kindle disponibile: {Kindle} ");
 Console.WriteLine($"Copertina flessibile disponibile: {Flexible} ---------------------------------------------------------------------------");
 
