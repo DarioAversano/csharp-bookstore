@@ -18,21 +18,21 @@ int NumberPage = int.Parse(NumberPageString);
 
 Console.Write("Inserisci il peso del libro: ");
 string WeightBookString = Console.ReadLine();
-int WeightBook = int.Parse(WeightBookString);
+float WeightBook = float.Parse(WeightBookString);
 
 Console.Write("Inserisci la larghezza del libro: ");
 string HeightBookString = Console.ReadLine();
-int HeightBook = int.Parse(HeightBookString);
+float HeightBook = float.Parse(HeightBookString);
 Console.Write("Inserisci altezza del libro: ");
 string WidthBookString = Console.ReadLine();
-int WidthBook = int.Parse(WidthBookString);
+float WidthBook = float.Parse(WidthBookString);
 Console.Write("Inserisci profondita del libro: ");
 string DepthBookString = Console.ReadLine();
-int DepthBook = int.Parse(DepthBookString);
+float DepthBook = float.Parse(DepthBookString);
 
 Console.Write("Inserisci la valutazione media degli utenti: ");
 string RatingUserString = Console.ReadLine();
-int RatingUser = int.Parse(RatingUserString);
+float RatingUser = float.Parse(RatingUserString);
 
 Console.Write("Inserisci il numero di recensioni: ");
 string ReviewsString = Console.ReadLine();
@@ -58,7 +58,7 @@ Console.WriteLine($"Dimensioni del libro: {HeightBook} cm x {WidthBook} cm x {De
 Console.WriteLine("Informazioni Amazon:");
 Console.WriteLine($"Numero di recensioni: {RatingUser} recensioni");
 Console.WriteLine($"Valutazione media: {Reviews} stelline");
-Console.WriteLine($"Kindle disponibile: {Kindle}");
+Console.WriteLine($"Kindle disponibile: {Kindle} ");
 Console.WriteLine($"Copertina flessibile disponibile: {Flexible} ---------------------------------------------------------------------------");
 
 Console.WriteLine("-------- IL LIBRO DI OGGI: " + Title + " di " + Autor + "------------");
@@ -70,6 +70,6 @@ Console.WriteLine("Dimensioni del libro: " + HeightBook + " cm x " + WidthBook +
 Console.WriteLine("Informazioni Amazon:");
 Console.WriteLine("Numero di recensioni: " + RatingUser + " recensioni");
 Console.WriteLine("Valutazione media: " + Reviews + " stelline");
-Console.WriteLine("Kindle disponibile: " + Kindle);
+Console.WriteLine("Kindle disponibile: " + Kindle );
 Console.WriteLine("Copertina flessibile disponibile: " + Flexible + "---------------------------------------------------------------------------");
 
