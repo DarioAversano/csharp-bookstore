@@ -1,6 +1,8 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 
+using System.Diagnostics.SymbolStore;
+
 Console.Write("Inserisci il titolo del libro: ");
 string Title = Console.ReadLine();
 
@@ -37,15 +39,17 @@ string ReviewsString = Console.ReadLine();
 int Reviews = int.Parse(ReviewsString);
 
 Console.Write("E disponibile la versione Kindle?");
-string Kindle = Console.ReadLine();
+string KindleString = Console.ReadLine();
+bool Kindle = bool.Parse(KindleString);
 
 Console.Write("La copertina flessibile è disponibile?");
-string Flexible = Console.ReadLine();
+string FlexibleString = Console.ReadLine();
+bool Flexible = bool.Parse(FlexibleString);
 
 
 
 
-Console.WriteLine($"-------- IL LIBRO DI OGGI: + {Title} + di + {Autor} ------------");
+Console.WriteLine($"-------- IL LIBRO DI OGGI: {Title} di {Autor} ------------");
 Console.WriteLine("Informazioni generiche:");
 Console.WriteLine($"ISBN: {ISBN}");
 Console.WriteLine($"Numero delle pagine: {NumberPage} pagine");
@@ -55,6 +59,17 @@ Console.WriteLine("Informazioni Amazon:");
 Console.WriteLine($"Numero di recensioni: {RatingUser} recensioni");
 Console.WriteLine($"Valutazione media: {Reviews} stelline");
 Console.WriteLine($"Kindle disponibile: {Kindle}");
-Console.WriteLine($"Copertina flessibile disponibile: {Flexible}---------------------------------------------------------------------------");
+Console.WriteLine($"Copertina flessibile disponibile: {Flexible} ---------------------------------------------------------------------------");
 
+Console.WriteLine("-------- IL LIBRO DI OGGI: " + Title + " di " + Autor + "------------");
+Console.WriteLine("Informazioni generiche:");
+Console.WriteLine("ISBN: " + ISBN);
+Console.WriteLine("Numero delle pagine: " + NumberPage + " pagine");
+Console.WriteLine("Peso del libro: " + WeightBook + " kg");
+Console.WriteLine("Dimensioni del libro: " + HeightBook + " cm x " + WidthBook + " cm x " + DepthBook + " cm");
+Console.WriteLine("Informazioni Amazon:");
+Console.WriteLine("Numero di recensioni: " + RatingUser + " recensioni");
+Console.WriteLine("Valutazione media: " + Reviews + " stelline");
+Console.WriteLine("Kindle disponibile: " + Kindle);
+Console.WriteLine("Copertina flessibile disponibile: " + Flexible + "---------------------------------------------------------------------------");
 
