@@ -13,43 +13,34 @@ string Autor = "Robert C. Martin";
 
 string ISBN = "9780132350884";
 
-string NumberPageString = "431";
-int NumberPage = int.Parse(NumberPageString);
+int NumberPage = 431;
 
-string WeightBookString = "800";
-float WeightBook = float.Parse(WeightBookString);
+float WeightBook = 800;
 
-string HeightBookString = "17.78";
-float HeightBook = float.Parse(HeightBookString);
+float HeightBook = 17.78f;
 
-string WidthBookString = "2.79";
-float WidthBook = float.Parse(WidthBookString);
+float WidthBook = 2.79f;
 
-string DepthBookString = "23.37";
-float DepthBook = float.Parse(DepthBookString);
+float DepthBook = 23.37f;
 
-string RatingUserString = "4.7";
-float RatingUser = float.Parse(RatingUserString);
+int Reviews = 5415;
 
-string ReviewsString = "5415";
-int Reviews = int.Parse(ReviewsString);
+float RatingUser = 4.7f;
 
-string KindleString = "True";
-bool Kindle = bool.Parse(KindleString);
+bool Kindle = true;
 
-string FlexibleString = "True";
-bool Flexible = bool.Parse(FlexibleString);
+bool Flexible = true;
 
 
 Console.WriteLine("-------- IL LIBRO DI OGGI: " + Title + " di " + Autor + "------------");
 Console.WriteLine("Informazioni generiche:");
 Console.WriteLine("ISBN: " + ISBN);
 Console.WriteLine("Numero delle pagine: " + NumberPage + " pagine");
-Console.WriteLine("Peso del libro: " + WeightBook + " kg");
+Console.WriteLine("Peso del libro: " + WeightBook + " g");
 Console.WriteLine("Dimensioni del libro: " + HeightBook + " cm x " + WidthBook + " cm x " + DepthBook + " cm");
 Console.WriteLine("Informazioni Amazon:");
-Console.WriteLine("Numero di recensioni: " + RatingUser + " recensioni");
-Console.WriteLine("Valutazione media: " + Reviews + " stelline");
+Console.WriteLine("Numero di recensioni: " + Reviews + " recensioni");
+Console.WriteLine("Valutazione media: " + RatingUser + " stelline");
 Console.WriteLine("Kindle disponibile: " + Kindle);
 Console.WriteLine("Copertina flessibile disponibile: " + Flexible + "---------------------------------------------------------------------------");
 
